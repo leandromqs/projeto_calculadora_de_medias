@@ -66,7 +66,7 @@ function calculaMedia() {
 function atualizaMedia() {
     const mediaFinal = calculaMedia();
 
-    document.getElementById('media-final').innerHTML = mediaFinal;
+    document.getElementById('media-final').innerHTML = mediaFinal.toFixed(2);
     document.getElementById('resultado-final').innerHTML = mediaFinal >= notaMinima ? spanAprovado : spanReprovado;
 }
 
